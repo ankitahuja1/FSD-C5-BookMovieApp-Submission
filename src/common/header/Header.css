@@ -1,0 +1,81 @@
+#header{
+    background-color: #222;
+    height: 36px;
+    padding: 8px 32px 8px 16px;
+}
+.logo{
+    height: 35px;
+    width: 35px;
+    float: left;
+}
+.logo img{
+    height: 35px;
+    animation: rotate-logo infinite 8s linear;
+    background-color: #ff7f7f;
+}
+
+@keyframes rotate-logo {
+    from {
+      transform: scaleX(-1);
+    }
+}
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+.loginLogout, .bookMyShow{
+    float: right;
+}
+.padding10{
+    padding-right: 10px;
+}
+.modal{
+    top: '50%';
+    left: '50%';
+    right: 'auto';
+    bottom: 'auto';
+    margin-right: '-50%';
+    transform: 'translate(-50%, -50%)';
+}
+.alignCenter{
+    display: flex;
+    justify-content: center;   
+}
+
+
+.mtop10{
+    margin-top: 10px !important;
+}
+
+.dispNone {
+    display: none;
+}
+
+.dispBlock {
+    display: block;
+}
+
+.red {
+    color: red;
+}
+.formControlh{
+    margin-bottom: 16px;
+    width: 200px;
+}
