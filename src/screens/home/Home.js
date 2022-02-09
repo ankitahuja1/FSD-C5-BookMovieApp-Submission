@@ -5,8 +5,6 @@ import React, { useState, useEffect } from 'react';
 import Header from "../../common/header/Header";
 import './Home.css';
 
-
-
 const useStyles = makeStyles((theme) => ({
     root:{
         paddingBottom:0
@@ -236,13 +234,11 @@ export default function Home({ baseUrl }) {
                                 </InputLabel>
                                 <Select
                                     variant="standard"
-
                                     id="demo-multiple-checkbox"
                                     multiple
                                     value={selArtists}
                                     onChange={handleArtistsChange}
                                     renderValue={(selected) => selected.join(', ')}
-
                                 >
                                     {artists.map((option) => (
                                         <MenuItem key={option.label} value={option.label}>
@@ -280,7 +276,6 @@ export default function Home({ baseUrl }) {
                                 <Button type="submit" variant="contained" color="primary" fullWidth onClick={applyFilterButtonHandler}>APPLY</Button>
                             </div>
                         </CardContent>
-
                     </Card>
                 </div>
             </div>
